@@ -1,0 +1,21 @@
+query,expected_intent,predicted_intent,correct
+Who will win Collingwood vs Geelong this week?,prediction,prediction,1
+Who will top-score for Brisbane?,prediction,prediction,1
+Will the Pies beat the Cats?,prediction,prediction,1
+Who is likely to win the next AFL match?,prediction,prediction,1
+Who will be the top player in the next game?,prediction,prediction,1
+What were Collingwood's stats last round?,retrieval,retrieval,1
+How many goals did Nick Daicos have last round?,retrieval,retrieval,1
+Show Geelong's recent results.,retrieval,retrieval,1
+What was Brisbane's score last match?,retrieval,retrieval,1
+How many disposals did the top player get?,retrieval,retrieval,1
+Who won the 2024 AFL Grand Final?,factual,factual,1
+What is a behind in AFL?,factual,factual,1
+How many players are on an AFL team?,factual,factual,1
+Explain the AFL finals format.,factual,factual,1
+What does a free kick mean in AFL?,factual,factual,1
+What is the capital of Pakistan?,off-topic,off-topic,1
+Write me a Python game.,off-topic,off-topic,1
+Tell me a joke about football.,off-topic,off-topic,1
+What is today's weather?,off-topic,off-topic,1
+Help me with my math homework.,off-topic,off-topic,1
