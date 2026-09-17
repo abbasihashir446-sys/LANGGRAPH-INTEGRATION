@@ -1,0 +1,11 @@
+conversation,path,query_or_turns,tool_route,validation,status
+C1,Factual,What is an AFL mark?,direct_answer,valid,PASS
+C2,Retrieval,What were the Pies' stats last round?,retrieval_tool,valid,PASS
+C3,Match prediction,Who will win Collingwood vs Geelong?,prediction_match_tool,valid,PASS
+C4,Player prediction,Who will top-score for the Cats?,prediction_player_tool,valid,PASS
+C5,Off-topic,Tell me a Python joke.,refusal,valid,PASS
+C6,Ambiguous,What were the stats last round?,retrieval_tool,clarification,PASS
+C7,Unsupported,Predict Collingwood's tackles next week.,prediction_tool,fallback/clarification,PASS
+C8,Missing fixture,Will the Pies beat the Cats this week?,prediction_tool,clarification,PASS
+C9,Multi-turn,Who will win Collingwood vs Geelong? / What about the top scorer?,prediction_tool,valid,PASS
+C10,Retrieval,How many goals did the Pies score last round?,retrieval_tool,valid,PASS

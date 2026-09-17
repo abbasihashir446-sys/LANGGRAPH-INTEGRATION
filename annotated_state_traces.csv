@@ -1,0 +1,16 @@
+trace,step,stage,state_or_note,route_or_result
+Trace A,1,User query,Who will win Collingwood vs Geelong?,-
+Trace A,2,Router,intent=prediction,prediction
+Trace A,3,Prediction tool,Pies/Cats aliases resolved to dataset team keys,prediction_match_tool
+Trace A,4,Validation,Tool result exists and contains probability/features,valid
+Trace A,5,Formatter,Probability + grounding + non-certain framing,final
+Trace B,1,User query,What were the Pies' stats last round?,-
+Trace B,2,Router,intent=retrieval,retrieval
+Trace B,3,Retrieval tool,Collingwood alias resolved and latest recorded match retrieved,retrieval_tool
+Trace B,4,Validation,Retrieved record exists,valid
+Trace B,5,Formatter,Dataset-grounded result,final
+Trace C,1,User query,Will the Pies beat the Cats this week?,-
+Trace C,2,Router,intent=prediction,prediction
+Trace C,3,Prediction tool,Team aliases resolved; requested current-week fixture checked,prediction_match_tool
+Trace C,4,Validation,No verified fixture exists in supplied historical dataset,clarification
+Trace C,5,Formatter,Asks for a supported fixture/date instead of guessing,final
